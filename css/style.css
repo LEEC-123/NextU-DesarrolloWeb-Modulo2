@@ -1,29 +1,35 @@
-html{
+html {
     background: #02010a;
 }
-img{
+
+img {
     filter: drop-shadow(2px 2px 2px #02010a);
 }
-i{
+
+i {
     color: #887f3f;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-#contenido{
+
+#contenido {
     max-width: 900px;
     margin: 0 auto;
 }
-.header{
+
+.header {
     background: #5b7989;
     border-radius: 15px 15px 0 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
+
 /*ENCABEZADO*/
-.h1-g{
+.h1-g {
     margin: 20px 0 10px 0;
     padding: 0;
     color: #fff;
@@ -31,64 +37,80 @@ body{
     font-family: 'Dancing Script', cursive;
 
 }
-.h1-p{
+
+.h1-p {
     text-align: center;
 }
-.col-header, .col-second{
+
+.col-header,
+.col-second {
     width: 100%;
 }
-.col-footer{
+
+.col-footer {
     width: auto;
 }
-.col-second{
+
+.col-second {
     text-align: center;
 }
-.col-second{
+
+.col-second {
     margin: 5px 0;
 }
 
 /* MENU */
-nav{
+nav {
     padding: 10px 0;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     text-align: center;
     padding-left: 0;
 }
-nav ul li{
+
+nav ul li {
     display: inline;
 }
-nav ul li a{
+
+nav ul li a {
     padding: 5px;
     font-family: 'Dancing Script', cursive;
     color: #fff;
     font-size: 1.4rem;
 }
-.activo{
+
+.activo {
     text-decoration: none !important;
 }
-.img-r{
+
+.img-r {
     max-width: 100%;
-    
+
 }
-.img-segunda{
+
+.img-segunda {
     transition: all 1s;
 }
-.img-segunda:hover{
+
+.img-segunda:hover {
     filter: drop-shadow(2px 2px 2px #82c3a6);
-transform: rotate(10deg);
-border: none;
+    transform: rotate(10deg);
+    border: none;
 }
-.img-tercera{
+
+.img-tercera {
     transition: all 1s;
 }
-.img-tercera:hover{
+
+.img-tercera:hover {
     border: none;
-    filter: drop-shadow(2px 2px 2px  #82c3a6);
+    filter: drop-shadow(2px 2px 2px #82c3a6);
     transform: translate(20px, -5px);
 }
-.link{
+
+.link {
     color: #000;
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
@@ -96,7 +118,8 @@ border: none;
     width: 100%;
     display: block;
 }
-footer{
+
+footer {
     background: #C6d5c5;
     border-radius: 0 0 15px 15px;
     padding: 15px 0;
@@ -104,7 +127,8 @@ footer{
     flex-direction: column;
     align-items: stretch;
 }
-.h3-footer{
+
+.h3-footer {
     margin: 0;
     padding: 10px 0;
     font-family: 'Dancing Script', cursive;
@@ -112,7 +136,8 @@ footer{
     margin: 0 0 0 5%;
     width: 100%;
 }
-.datos{
+
+.datos {
     list-style: none;
     margin: 0 0 0 5%;
     padding: 0;
@@ -120,19 +145,24 @@ footer{
     font-weight: normal;
     font-size: 1.2rem;
 }
-.datos li{
+
+.datos li {
     margin: 4px 0;
 }
-.datos li a{
+
+.datos li a {
     color: #000;
     text-decoration: none;
 }
+
 /*PAGINA INDEX*/
-#central{
+#central {
     background: #82c3a6;
     padding: 20px;
 }
-#secundaria, #secundaria-paisajes{
+
+#secundaria,
+#secundaria-paisajes {
     padding: 15px 10px;
     background: #d5c75f;
     display: flex;
@@ -140,64 +170,78 @@ footer{
     border: 1px solid #000;
 }
 
-.col-second-paisajes{
+.col-second-paisajes {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.img-paisajes{
+
+.img-paisajes {
     margin: 10px;
 }
-@media (min-width: 901px){
-.header{
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.h1-g{
-margin: 0;
-padding: 0;
-}
-    #secundaria{
+
+@media (min-width: 901px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .h1-g {
+        margin: 0;
+        padding: 0;
+    }
+
+    #secundaria {
         flex-direction: row;
     }
-    .col-second{
+
+    .col-second {
         width: 50%;
         margin: 0 10px;
     }
-    footer{
+
+    footer {
         flex-direction: row;
         justify-content: space-around;
     }
-    .h3-footer{
+
+    .h3-footer {
         font-size: 2rem;
- }
-    .datos{
-font-size: 1rem;
     }
-    #secundaria-paisajes{
+
+    .datos {
+        font-size: 1rem;
+    }
+
+    #secundaria-paisajes {
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
-    .col-second-paisajes{
+
+    .col-second-paisajes {
         display: flex;
         justify-content: center;
         flex-direction: row;
         align-items: center;
     }
-    .img-paisajes{
+
+    .img-paisajes {
         max-width: 30% !important;
     }
-    .img-first-efect{
+
+    .img-first-efect {
         filter: blur(10px);
     }
-    .img-second-efect{
-        filter: grayscale(100px);
-        
+
+    .img-second-efect {
+        filter: grayscale(100%);
+
     }
-    .img-third-fefect{
+
+    .img-third-fefect {
         filter: sepia(90%);
 
     }
