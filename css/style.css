@@ -132,12 +132,22 @@ footer{
     background: #82c3a6;
     padding: 20px;
 }
-#secundaria{
+#secundaria, #secundaria-paisajes{
     padding: 15px 10px;
     background: #d5c75f;
     display: flex;
     flex-direction: column;
     border: 1px solid #000;
+}
+
+.col-second-paisajes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img-paisajes{
+    margin: 10px;
 }
 @media (min-width: 901px){
 .header{
@@ -166,5 +176,29 @@ padding: 0;
     .datos{
 font-size: 1rem;
     }
-    
+    #secundaria-paisajes{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .col-second-paisajes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .img-paisajes{
+        max-width: 30% !important;
+    }
+    .img-first-efect{
+        filter: blur(10px);
+    }
+    .img-second-efect{
+        filter: grayscale(100px);
+        
+    }
+    .img-third-fefect{
+        filter: sepia(90%);
+
+    }
 }
