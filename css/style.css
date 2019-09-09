@@ -1,3 +1,4 @@
+/*ESTILOS PARA TODAS LAS PAGINAS*/
 html {
     background: #02010a;
 }
@@ -19,7 +20,6 @@ body {
     max-width: 900px;
     margin: 0 auto;
 }
-
 .header {
     background: #5b7989;
     border-radius: 15px 15px 0 0;
@@ -27,8 +27,11 @@ body {
     flex-direction: column;
     align-items: stretch;
 }
+#central {
+    background: #82c3a6;
+    padding: 20px;
+}
 
-/*ENCABEZADO*/
 .h1-g {
     margin: 20px 0 10px 0;
     padding: 0;
@@ -42,13 +45,11 @@ body {
     text-align: center;
 }
 
+
+/*columnas*/
 .col-header,
 .col-second {
     width: 100%;
-}
-
-.col-footer {
-    width: auto;
 }
 
 .col-second {
@@ -59,7 +60,7 @@ body {
     margin: 5px 0;
 }
 
-/* MENU */
+/*menu*/
 nav {
     padding: 10px 0;
 }
@@ -85,9 +86,21 @@ nav ul li a {
     text-decoration: none !important;
 }
 
+/*imágenes responsivas*/
 .img-r {
     max-width: 100%;
 
+}
+/*FIN - ESTILOS PARA TODAS LAS PAGINAS*/
+
+/*ESTILOS PARA PAGINA INDEX*/
+/*transiciones a imagenes de index*/
+#secundaria,
+#secundaria-anexas {
+    padding: 15px 10px;
+    background: #d5c75f;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-segunda {
@@ -118,7 +131,10 @@ nav ul li a {
     width: 100%;
     display: block;
 }
+/*FIN - ESTILOS PAGINA INDEX*/
 
+
+/*ESTILOS FOOTER*/
 footer {
     background: #C6d5c5;
     border-radius: 0 0 15px 15px;
@@ -126,6 +142,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+.col-footer {
+    width: auto;
 }
 
 .h3-footer {
@@ -154,34 +174,39 @@ footer {
     color: #000;
     text-decoration: none;
 }
+/*FIN - ESTILOS FOOTER*/
 
-/*PAGINA INDEX*/
-#central {
-    background: #82c3a6;
-    padding: 20px;
-}
 
-#secundaria,
-#secundaria-paisajes {
-    padding: 15px 10px;
-    background: #d5c75f;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #000;
-}
 
-.col-second-paisajes {
+
+.col-second-anexas {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.img-paisajes {
+.img-anexas {
     margin: 10px;
 }
 
+/*EFECTOS DE IMAGENES*/
+
+.img-first-efect {
+    filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
+}
+
+.img-second-efect {
+    filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+
+}
+
+.img-third-efect {
+    filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+
+}
 @media (min-width: 901px) {
+    /*ENCABEZADO EN MODO ESCRITORIO*/
     .header {
         flex-direction: row;
         justify-content: space-around;
@@ -193,6 +218,7 @@ footer {
         padding: 0;
     }
 
+    /*CUERPO EN MODO ESCRITORIO*/
     #secundaria {
         flex-direction: row;
     }
@@ -201,7 +227,23 @@ footer {
         width: 50%;
         margin: 0 10px;
     }
+    #secundaria-anexas {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .col-second-anexas {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .img-anexas {
+        max-width: 30% !important;
+    }
+
+/*FOOTER EN MODO ESCRITORIO*/
     footer {
         flex-direction: row;
         justify-content: space-around;
@@ -215,34 +257,7 @@ footer {
         font-size: 1rem;
     }
 
-    #secundaria-paisajes {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
+    
+    
 
-    .col-second-paisajes {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .img-paisajes {
-        max-width: 30% !important;
-    }
-
-    .img-first-efect {
-        filter: blur(10px);
-    }
-
-    .img-second-efect {
-        filter: grayscale(100%);
-
-    }
-
-    .img-third-fefect {
-        filter: sepia(90%);
-
-    }
 }
